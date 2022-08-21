@@ -8,8 +8,9 @@ let userClickedPattern = [];
 let gameStarted = false;
 let counter = 0
 
-$(document).on("touchstart" function()
+$(document).on("touchend" function(e)
 {
+  e.preventDefault();
   if(!gameStarted){
     $("#level-title").text("Level " + counter);
     nextSequence();
