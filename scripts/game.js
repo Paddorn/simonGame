@@ -8,6 +8,14 @@ let userClickedPattern = [];
 let gameStarted = false;
 let counter = 0
 
+$(document).on("touchstart" function()
+{
+  if(!gameStarted){
+    $("#level-title").text("Level " + counter);
+    nextSequence();
+    gameStarted = true;
+}
+});
 $(document).keypress(function(){
   if(!gameStarted){
     $("#level-title").text("Level " + counter);
