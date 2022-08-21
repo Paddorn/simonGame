@@ -92,7 +92,7 @@ function animatePress(currentColor) {
 }
 
 function restart(){
-  $("h1").text("Press A Key to Start")
+  $("h1").text("Click Me or Press any Key to Start")
   counter = 0;
   gameStarted = false;
   gamePattern = [];
